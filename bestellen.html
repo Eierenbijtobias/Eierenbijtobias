@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bestellen | Eieren bij Tobias</title>
+
+<meta name="description" content="Bestel verse scharreleieren bij Eieren bij Tobias.">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<div class="logo">
+
+🥚 <span>Eieren bij Tobias</span>
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="bestellen.html" class="nav-button">
+
+Bestellen
+
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+<div class="hero-text">
+
+<div class="hero-label">
+
+🥚 Bestel eenvoudig online
+
+</div>
+
+<h1>
+
+Bestel jouw verse scharreleieren
+
+</h1>
+
+<p>
+
+Vul hieronder je gegevens in.
+Na het klikken op de knop wordt jouw bestelling automatisch geopend in WhatsApp.
+
+</p>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1506976785307-8732e854ad03?auto=format&fit=crop&w=1200&q=80" alt="Verse eieren">
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Bestelformulier</h2>
+
+<p>
+
+Kies jouw pakket en vul je gegevens in.
+
+</p>
+
+</div>
+
+<form id="bestelForm">
+
+<div class="form-group">
+
+<label for="naam">Naam</label>
+
+<input
+type="text"
+id="naam"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label for="adres">Straat + huisnummer</label>
+
+<input
+type="text"
+id="adres"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label for="postcode">Postcode</label>
+
+<input
+type="text"
+id="postcode"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label for="plaats">Plaats</label>
+
+<input
+type="text"
+id="plaats"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label for="telefoon">Telefoonnummer</label>
+
+<input
+type="tel"
+id="telefoon"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label for="pakket">
+
+Pakket
+
+</label>
+
+<select id="pakket">
+
+<option value="2.70">
+
+Basic – 10 eieren (€2,70)
+
+</option>
+
+<option value="5.23" selected>
+
+Plus – 20 eieren (€5,23)
+
+</option>
+
+<option value="7.61">
+
+Premium – 30 eieren (€7,61)
+
+</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label for="aantal">
+
+Aantal doosjes
+
+</label>
+
+<input
+type="number"
+id="aantal"
+value="1"
+min="1"
+max="25">
+
+</div>
+
+<div class="form-group">
+
+    <label for="opmerking">
+
+        Opmerking (optioneel)
+
+    </label>
+
+    <textarea
+        id="opmerking"
+        rows="4"
+        placeholder="Bijvoorbeeld: graag achterom bezorgen."></textarea>
+
+</div>
+
+<hr>
+
+<div class="bestel-overzicht">
+
+    <h2>Besteloverzicht</h2>
+
+    <p>
+
+        Pakket:
+        <strong id="overzichtPakket">Plus</strong>
+
+    </p>
+
+    <p>
+
+        Prijs per doosje:
+        <strong id="prijsPerDoos">€5,23</strong>
+
+    </p>
+
+    <p>
+
+        Aantal:
+        <strong id="overzichtAantal">1</strong>
+
+    </p>
+
+    <p class="totaal">
+
+        Totaal:
+        <strong id="totaalPrijs">€5,23</strong>
+
+    </p>
+
+</div>
+
+<br>
+
+<button
+    type="button"
+    class="button"
+    onclick="verstuurBestelling()">
+
+    📲 Bestellen via WhatsApp
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Waarom bestellen bij Tobias?</h2>
+
+</div>
+
+<div class="pricing-grid">
+
+<div class="prijs-kaart">
+
+<div class="kaart-icoon">🥚</div>
+
+<h3>Altijd vers</h3>
+
+<p>
+
+Verse scharreleieren van goede kwaliteit.
+
+</p>
+
+</div>
+
+<div class="prijs-kaart">
+
+<div class="kaart-icoon">🚚</div>
+
+<h3>Persoonlijke bezorging</h3>
+
+<p>
+
+Ik bezorg zelf in Assen en Kloosterveen.
+
+</p>
+
+</div>
+
+<div class="prijs-kaart">
+
+<div class="kaart-icoon">⭐</div>
+
+<h3>Eerlijke prijs</h3>
+
+<p>
+
+Goede kwaliteit voor een scherpe prijs.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+
+<h3>🥚 Eieren bij Tobias</h3>
+
+<p>
+
+Verse scharreleieren,
+persoonlijk bezorgd.
+
+</p>
+
+</div>
+
+<div>
+
+<h4>Contact</h4>
+
+<p>📱 +31 6 43817257</p>
+
+<p>📧 tobias.bedrijf1@gmail.com</p>
+
+</div>
+
+<div>
+
+<h4>Bezorggebied</h4>
+
+<p>📍 Assen</p>
+
+<p>📍 Kloosterveen</p>
+
+<p>📍 Stedelaan + 1 km</p>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+<p>
+
+© 2026 Eieren bij Tobias
+
+</p>
+
+</div>
+
+</footer>
+
+<a
+href="https://wa.me/31643817257"
+class="whatsapp-float"
+target="_blank">
+
+💬
+
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
